@@ -99,10 +99,11 @@ public class Main {
         // поэтому для решения задания вам нужно использовать циклы.
         //Распечатайте результат преобразования в консоль.
         int[] box3 = {1, 2, 3};
-        for (int i = 0; i < 3; i++) {
-            if (box3[i] %2==1) {
-                System.out.println(box3[i]+1);
+        for (int i = 0; i < box3.length; i++) {
+            if (box3[i] % 2 != 0) {
+                box3[i] += 1;
             }
         }
-    }
-}
+                System.out.println(Arrays.toString(box3));
+            }
+        }
